@@ -10,6 +10,10 @@ The application is deployed and available at the following link:
 
 🔗 **[https://dzencode-inventory-app.onrender.com/en](https://dzencode-inventory-app.onrender.com/en)**
 
+A short video review is available for viewing at the link:
+
+🔗 **[https://drive.google.com/file/d/198pA6Qi9ApELUxuuBbnFi097Bm-6I6BX/view?usp=sharing](https://drive.google.com/file/d/198pA6Qi9ApELUxuuBbnFi097Bm-6I6BX/view?usp=sharing)**
+
 ### ⚠️ Note for Reviewers:
 
 - **Cold Start**: Since I am using the `Render` free tier, the server "goes to sleep" after a period of inactivity. The initial load may take **30-50 seconds**.

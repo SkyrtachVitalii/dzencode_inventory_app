@@ -10,6 +10,11 @@
 
 🔗 **[https://dzencode-inventory-app.onrender.com/en](https://dzencode-inventory-app.onrender.com/en)**
 
+
+Короткий відеоогляд доступний для перегляду за посиланням:
+
+🔗 **[https://drive.google.com/file/d/198pA6Qi9ApELUxuuBbnFi097Bm-6I6BX/view?usp=sharing](https://drive.google.com/file/d/198pA6Qi9ApELUxuuBbnFi097Bm-6I6BX/view?usp=sharing)**
+
 ### ⚠️ Примітка для тестувальника:
 
 - **Cold Start**: Оскільки використовується безкоштовний тариф `Render`, сервер "засинає" після періоду бездіяльності. Перше завантаження сайту може зайняти **30-50 секунд**.
