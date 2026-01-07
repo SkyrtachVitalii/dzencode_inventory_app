@@ -1,0 +1,13 @@
+// TopMenu.module.scss
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1100;
+    height: var(--header-height);
+}
+
+.dateBlock{
+    font-size: 1.1rem;
+    color: #333;
+}

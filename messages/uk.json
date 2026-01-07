@@ -1,0 +1,42 @@
+{
+  "Navigation": {
+    "products": "Продукти",
+    "orders": "Ордери",
+    "users": "Користувачі",
+    "settings": "Налаштування"
+  },
+  "ProductsPage": {
+    "title": "Продукти",
+    "add": "Додати продукт"
+  },
+  "OrdersPage": {
+    "title": "Замовлення",
+    "add": "Додати замовлення",
+    "products": "Продукти"
+  },
+  "SingleProduct": {
+    "from": "з",
+    "to": "по",
+    "new": "Новий",
+    "used": "Б/У",
+    "inService": "В ремонті",
+    "free": "Вільний",
+    "longNameOfGroup": "Довга назва групи"
+  },
+  "ProductsFilter": {
+    "all": "Всі",
+    "type": "Тип",
+    "specification": "Специфікація"
+  },
+  "DeleteModal": {
+    "message": "Ви впевнені, що хочете видалити?",
+    "confirm": "Видалити",
+    "cancel": "Відмінити",
+    "product": "продукт",
+    "order": "ордер"
+  },
+  "NotFoundPage": {
+    "message": "Нічого не знайдено"
+  }
+  
+}

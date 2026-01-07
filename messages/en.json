@@ -1,0 +1,41 @@
+{
+  "Navigation": {
+    "products": "Products",
+    "orders": "Orders",
+    "users": "Users",
+    "settings": "Settings"
+  },
+  "ProductsPage": {
+    "title": "Products",
+    "add": "Add product"
+  },
+  "OrdersPage": {
+    "title": "Orders",
+    "add": "Add order",
+    "products": "Products"
+  },
+  "SingleProduct": {
+    "from": "from",
+    "to": "to",
+    "new": "New",
+    "used": "Used",
+    "inService": "In Service",
+    "free": "Free",
+    "longNameOfGroup": "The long name of group"
+  },
+  "ProductsFilter": {
+    "all": "All",
+    "type": "Type",
+    "specification": "Specification"
+  },
+  "DeleteModal": {
+    "message": "Are you sure you want to delete?",
+    "confirm": "Delete",
+    "cancel": "Cancel",
+    "product": "product",
+    "order": "order"
+  },
+  "NotFoundPage": {
+    "message": "Nothing found"
+  }
+}

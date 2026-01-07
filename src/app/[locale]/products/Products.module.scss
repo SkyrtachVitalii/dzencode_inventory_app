@@ -1,0 +1,28 @@
+.productsPage {
+    min-height: 60vh;
+
+    .header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            margin-right: 20px;
+            margin-top: 0.5rem;
+        }
+    }
+
+    .productsList {
+        display: flex;
+        flex-direction: column;
+        overflow-x: auto;
+        max-width: calc(100vw - var(--navigation-width) - var(--custom-space) - 8px);
+
+        &>* {
+            min-width: 1400px;
+        }
+    }
+}

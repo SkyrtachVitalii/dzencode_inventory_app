@@ -1,0 +1,36 @@
+// globals.scss
+
+:root {
+  --header-height: 90px;
+  --navigation-width: 250px;
+  --custom-space: 32px;
+}
+
+$body-bg: #f0f3f5;
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  h1 {
+    color: var(--bs-primary);
+    margin-top: 20px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
