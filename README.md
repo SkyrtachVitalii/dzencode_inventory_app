@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📦 Inventory Management App
 
-## Getting Started
+Це повнофункціональна система управління інвентарем, розроблена як тестове завдання для компанії **Dzencode**. Проєкт поєднує в собі сучасний стек технологій для створення швидкого вебдодатку з підтримкою оновлення даних у реальному часі.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Стек технологій
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Додаток побудований на професійних інструментах розробки:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Frontend**: `Next.js 16 (App Router)` — сучасний React-фреймворк.
+* **Styling**: `Bootstrap 5` + `React-Bootstrap` — для надійного та адаптивного інтерфейсу.
+* **CSS Preprocessor**: `SASS` — для професійної роботи зі стилями.
+* **Backend**: `Socket.io` — для реалізації WebSockets (живе оновлення дашборду).
+* **Database**: `Prisma ORM` + `SQLite` — для надійної роботи з даними.
+* **State Management**: `Redux Toolkit` — централізоване керування станом додатку.
+* **Animations**: `Framer Motion` — для плавних переходів та анімацій.
+* **Containerization**: `Docker` — для швидкого розгортання в ізольованому середовищі.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ✨ Особливості та функціонал
 
-To learn more about Next.js, take a look at the following resources:
+### 📊 Dashboard в реальному часі
+* Миттєве відстеження кількості активних сесій через WebSockets.
+* Живе відображення загальної кількості товарів у системі.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🛠 Управління товарами
+* Перегляд та видалення позицій.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🌍 Локалізація (i18n)
+* Підтримка української та англійської мов за допомогою `next-intl`.
 
-## Deploy on Vercel
+### 📈 Аналітика
+* Візуалізація даних про склад за допомогою бібліотеки `recharts`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠 Доступні скрипти
+
+У проєкті налаштовані наступні команди для зручної розробки та деплою:
+
+### 💻 Розробка та збірка
+* `npm run dev` — запуск сервера розробки з `nodemon` та `ts-node`.
+* `npm run build` — збірка фронтенд-частини (Next.js).
+* `npm run build:server` — компіляція TypeScript-коду сервера у папку `dist`.
+* `npm run setup` — повний цикл підготовки: встановлення залежностей та налаштування БД.
+
+### 📂 Робота з базою даних (Prisma)
+* `npm run db:setup` — синхронізація схеми Prisma з SQLite та запуск сіда (seed).
+* `npm run prisma:seed` — наповнення бази тестовими даними.
+* `npm run postinstall` — автоматична генерація Prisma Client.
+
+### 🚀 Production та Docker
+* `npm run start` — запуск сервера у production-режимі безпосередньо з TypeScript-файлів (через ts-node)
+* `npm run start:prod` — запуск зібраного проєкту з папки `dist`.
+* `npm run start:docker` — універсальна команда для Docker: БД + збірка + запуск.
+
+### 🧪 Якість коду та тести
+* `npm run lint` — перевірка коду за допомогою ESLint.
+* `npm run test` — запуск модульних тестів (Jest + React Testing Library).
+
+---
+
+## 📦 Як запустити додаток
+
+### Варіант 1: Через Docker (Рекомендовано)
+1.  **Зберіть образ**: 
+    ```bash
+    docker build -t inventory-app .
+    ```
+2.  **Запустіть контейнер**: 
+    ```bash
+    docker run -p 3000:3000 inventory-app
+    ```
+3.  **Відкрийте**: [http://localhost:3000](http://localhost:3000)
+
+### Варіант 2: Локальний запуск
+1.  **Підготовка**: 
+    ```bash
+    npm run setup
+    ```
+2.  **Запуск**: 
+    ```bash
+    npm run dev
+    ```
+
+---
+
+## 📝 Примітки
+* **Активні сесії**: Лічильник відображає кількість активних WebSocket-з'єднань (кожна відкрита вкладка рахується як окрема сесія).
+* **База даних**: Використовується файл SQLite (`dev.db`), що дозволяє перевірити проєкт без розгортання зовнішнього SQL-сервера.
+
+---
+
+**Виконав:** [Твоє Ім'я]  
+**Контакти:** [Твій Email / Telegram]

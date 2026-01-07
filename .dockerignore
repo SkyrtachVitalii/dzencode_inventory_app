@@ -1,0 +1,11 @@
+node_modules
+.next
+dist
+.swc
+.git
+.gitignore
+*.md
+.vscode
+
+*.db
+*.db-journal
